@@ -2,6 +2,11 @@
 
 Một hệ thống kiểm chứng tin tức (Fake News Detection) hiệu năng cao dành cho tiếng Việt, sử dụng kiến trúc **5-Gate Waterfall** để tối ưu chi phí và độ chính xác. Hệ thống kết hợp giữa các mô hình AI cục bộ (PhoBERT, NLI) và mô hình ngôn ngữ lớn (Gemini 2.5) để đưa ra phán quyết tin cậy nhất.
 
+<<<<<<< HEAD
+![GitHub Banner](https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6)
+
+=======
+>>>>>>> 1350e21fca5c18fd6ab70ab1f5c648d4a614f3ed
 ## 🚀 Tính năng nổi bật
 
 - **Kiến trúc Thác nước 5 Trạm (5-Gate Waterfall):** 

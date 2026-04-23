@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+prisma
+google-generativeai
+requests
+python-dotenv
+transformers
+torch
+sentence-transformers
+ddgs
+
