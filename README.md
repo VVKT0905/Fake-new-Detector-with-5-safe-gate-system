@@ -1,12 +1,6 @@
 # 🛡️ Fake News Detection System (5-Gate Waterfall)
 
 Một hệ thống kiểm chứng tin tức (Fake News Detection) hiệu năng cao dành cho tiếng Việt, sử dụng kiến trúc **5-Gate Waterfall** để tối ưu chi phí và độ chính xác. Hệ thống kết hợp giữa các mô hình AI cục bộ (PhoBERT, NLI) và mô hình ngôn ngữ lớn (Gemini 2.5) để đưa ra phán quyết tin cậy nhất.
-
-<<<<<<< HEAD
-![GitHub Banner](https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6)
-
-=======
->>>>>>> 1350e21fca5c18fd6ab70ab1f5c648d4a614f3ed
 ## 🚀 Tính năng nổi bật
 
 - **Kiến trúc Thác nước 5 Trạm (5-Gate Waterfall):** 
@@ -37,14 +31,14 @@ Một hệ thống kiểm chứng tin tức (Fake News Detection) hiệu năng c
 
 ### 2. Cài đặt AI Backend (Python)
 ```bash
-cd phobert_fake_news_model
+cd Python BackEnd
 pip install -r requirements.txt
 # Khởi tạo cơ sở dữ liệu cục bộ
 python -m prisma db push
 ```
 
 ### 3. Cấu hình môi trường
-Tạo file `.env` trong thư mục `phobert_fake_news_model/` và điền key của bạn:
+Tạo file `.env` trong thư mục `Python BackEnd/` và điền key của bạn: (có sẵn 1 key test rồi có thể chạy ngay)
 ```env
 GEMINI_API_KEY=your_gemini_api_key
 ```
