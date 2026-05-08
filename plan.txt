@@ -1,0 +1,27 @@
+# Fake News Detection System: Implementation Plan (Finalized)
+
+## Objective
+Implement and maintain a 5-Gate Waterfall system for Vietnamese fake news detection using local models and fallback LLMs.
+
+## Phases
+
+### Phase 1: Local Infrastructure (Completed)
+1.  Set up FastAPI AI Backend.
+2.  Integrate local fine-tuned PhoBERT for Gate 2.
+3.  Implement Prisma ORM with SQLite for local caching (Gates 1 & 5).
+
+### Phase 2: Fact-Checking & Logic Optimization (Completed)
+1.  Implement DuckDuckGo search retrieval (replacing restricted Google API).
+2.  Integrate local Cross-Encoder NLI model for Gate 3.
+3.  Establish strict confidence thresholds (0.98 for PhoBERT, 0.96 for NLI) to minimize false positives.
+4.  Implement "Number-Aware Routing": Automatically pass claims with digits to the LLM for higher precision.
+
+### Phase 3: Deep Reasoning & UI (Completed)
+1.  Connect Gemini 2.5 Flash API for Gate 4.
+2.  Implement advanced "Expert Fact-Checker" prompting for Gemini to detect subtle date/number lies.
+3.  Develop React Dashboard to display granular results (which gate provided the answer, source links, and detailed explanations).
+
+### Phase 4: Maintenance & Scaling
+1.  **Database Management:** Use `python -m prisma studio` to view and edit the local knowledge base.
+2.  **Model Updates:** Periodically update the local NLI model or PhoBERT weights as new data becomes available.
+3.  **Deployment:** The system is ready for local deployment or can be containerized using Docker for VPS hosting.
