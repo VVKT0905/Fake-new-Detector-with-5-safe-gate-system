@@ -8,7 +8,7 @@
 
   <!-- Badges -->
   <img src="https://img.shields.io/badge/Python-3.10+-blue.svg" alt="Python Version" />
-  <img src="https://img.shields.io/badge/React-18-61DAFB.svg?logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/React-19-61DAFB.svg?logo=react&logoColor=black" alt="React" />
   <img src="https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi" alt="FastAPI" />
   <img src="https://img.shields.io/badge/LangChain-ReAct_Agent-green" alt="LangChain" />
   <img src="https://img.shields.io/badge/ChromaDB-Semantic_Cache-purple" alt="ChromaDB" />
@@ -30,6 +30,7 @@ This project implements an **Industry-Grade 5-Gate Waterfall Architecture**. It 
 ## ✨ Key Features
 
 - **🌐 Multi-Source Intelligence:** Retrieves and synthesizes live context from DuckDuckGo and Wikipedia.
+- **🔗 Smart URL Scraper:** Automatically extracts content from news articles via URL to verify entire stories.
 - **⚡ Semantic Caching:** Uses ChromaDB and embeddings to detect synonymous claims (e.g. "Cat has 4 legs" vs "Felines possess four limbs"), saving 100% of API costs on repeat concepts.
 - **🧠 Autonomous Agentic Workflow:** Complex claims trigger a LangChain ReAct Agent that can think, search, and iterate before deciding.
 - **🔍 Exact Quote Verification:** Verifications include direct snippet citations to prove or disprove the claim.
@@ -97,16 +98,16 @@ You need two separate terminals.
 cd "Python BackEnd"
 python api.py
 ```
-*(Note: The first run will download the ~500MB multilingual embedding model for the Vector DB).*
+*(Note: The first run will download the ~500MB multilingual embedding model for the Vector DB. Port: 8000).*
 
 **Terminal 2 (Frontend):**
 ```bash
-cd ReactWebFrontEnd
+cd "ReactWeb FrontEnd"
 npm install
 npm run dev
 ```
 
-Open the Localhost URL provided by the Frontend terminal.
+Open **http://localhost:25490** in your browser.
 
 ---
 
@@ -117,7 +118,7 @@ Open the Localhost URL provided by the Frontend terminal.
 - **LLM:** Google Gemini 2.0 Flash
 - **Local NLP:** HuggingFace Transformers (PhoBERT, xlm-roberta Cross-Encoder, paraphrase-multilingual-MiniLM)
 - **Backend:** FastAPI, Python, Prisma ORM
-- **Frontend:** React, Vite, Tailwind CSS
+- **Frontend:** React 19, Vite 6, Tailwind CSS 4
 - **Data Sources:** DuckDuckGo, Wikipedia API
 
 ---

@@ -8,7 +8,7 @@
 
   <!-- Badges -->
   <img src="https://img.shields.io/badge/Python-3.10+-blue.svg" alt="Python Version" />
-  <img src="https://img.shields.io/badge/React-18-61DAFB.svg?logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/React-19-61DAFB.svg?logo=react&logoColor=black" alt="React" />
   <img src="https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi" alt="FastAPI" />
   <img src="https://img.shields.io/badge/LangChain-ReAct_Agent-green" alt="LangChain" />
   <img src="https://img.shields.io/badge/ChromaDB-Semantic_Cache-purple" alt="ChromaDB" />
@@ -30,6 +30,7 @@ Dự án này triển khai một **Kiến trúc Thác nước 5 Trạm (5-Gate W
 ## ✨ Tính Năng Nổi Bật
 
 - **🌐 Trí tuệ Đa Nguồn:** Trích xuất và tổng hợp ngữ cảnh thực tế từ cả DuckDuckGo và Wikipedia.
+- **🔗 Trình Trích xuất URL Thông minh:** Tự động lấy nội dung từ các bài báo qua URL để kiểm chứng toàn bộ câu chuyện.
 - **⚡ Bộ Nhớ Đệm Ngữ Nghĩa (Semantic Cache):** Sử dụng ChromaDB và Vector Embeddings để nhận diện các câu hỏi đồng nghĩa (VD: "Chó có 4 chân" và "Loài khuyển sở hữu bốn chi"), tiết kiệm 100% chi phí API cho các chủ đề lặp lại.
 - **🧠 Luồng Xử lý Agent Tự trị:** Các nhận định phức tạp sẽ kích hoạt LangChain ReAct Agent, cho phép AI tự "suy nghĩ", tìm kiếm công cụ, và lặp lại quá trình để đưa ra phán quyết.
 - **🔍 Xác minh bằng Trích dẫn:** Mỗi kết luận đều đi kèm với một đoạn trích dẫn (quote) lấy trực tiếp từ nguồn web để làm bằng chứng thép.
@@ -92,7 +93,7 @@ GEMINI_API_KEY=your_google_gemini_api_key_here
 
 ### 3. Thiết Lập Frontend (Node.js)
 ```bash
-cd ReactWebFrontEnd
+cd "ReactWeb FrontEnd"
 npm install
 ```
 
@@ -104,15 +105,15 @@ Bạn sẽ cần chạy đồng thời cả backend và frontend.
 cd "Python BackEnd"
 python api.py
 ```
-*(Lưu ý: Lần chạy đầu tiên sẽ tốn chút thời gian để tải mô hình Embedding ~500MB cho ChromaDB).*
+*(Lưu ý: Lần chạy đầu tiên sẽ tốn chút thời gian để tải mô hình Embedding ~500MB cho ChromaDB. Cổng: 8000).*
 
 **Terminal 2 (Frontend):**
 ```bash
-cd ReactWebFrontEnd
+cd "ReactWeb FrontEnd"
 npm run dev
 ```
 
-Mở trình duyệt và truy cập vào đường dẫn Localhost do terminal Frontend cung cấp.
+Mở trình duyệt và truy cập vào **http://localhost:25490**.
 
 ---
 
@@ -123,7 +124,7 @@ Mở trình duyệt và truy cập vào đường dẫn Localhost do terminal Fr
 - **LLM:** Google Gemini 2.0 Flash
 - **Local NLP:** HuggingFace Transformers (PhoBERT, xlm-roberta Cross-Encoder, paraphrase-multilingual-MiniLM)
 - **Backend:** FastAPI, Python, Prisma ORM
-- **Frontend:** React, Vite, Tailwind CSS
+- **Frontend:** React 19, Vite 6, Tailwind CSS 4
 - **Nguồn Dữ Liệu:** DuckDuckGo, Wikipedia API
 
 ---
